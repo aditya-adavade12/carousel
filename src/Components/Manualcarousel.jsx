@@ -21,7 +21,11 @@ const Manualcarousel = () => {
   return (
     <div>
       {/* Main Wrapper */}
-      <div className="w-[50vw] mx-auto">
+      <div className="w-[50vw] mx-auto mt-2.5">
+        <h2 className="text-white font-semibold text-xl">Manual Carousel</h2>
+        <p className="text-stone-500 font-medium">
+          Controlled with prev and next buttons.
+        </p>
         {/* Images */}
         <div className="relative w-full h-[400px] mx-auto overflow-hidden">
           <div
@@ -32,7 +36,7 @@ const Manualcarousel = () => {
               <img
                 key={index}
                 src={img}
-                className="w-[800px] h-[500px] object-fill flex-shrink-0 rounded-lg"
+                className="w-full h-[500px] object-cover flex-shrink-0 rounded-lg cursor-pointer"
               />
             ))}
           </div>
